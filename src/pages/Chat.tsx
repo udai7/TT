@@ -73,7 +73,7 @@ export default function Chat() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             className="text-slate-600"
           >
             <ArrowLeft size={20} />

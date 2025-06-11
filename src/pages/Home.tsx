@@ -171,11 +171,11 @@ export default function Home() {
                     {destination.rating}
                   </Badge>
                 </div>
-                <div className="absolute bottom-3 left-3 right-3 p-2 bg-white/10 backdrop-blur-sm rounded-md">
-                  <h3 className="text-white text-xl font-bold mb-1">
+                <div className="absolute bottom-3 left-3 right-3 p-2">
+                  <h3 className="text-white text-xl font-bold mb-1 [text-shadow:_0_2px_2px_rgb(0_0_0_/_80%)]">
                     {destination.name}
                   </h3>
-                  <p className="text-white/90 text-sm line-clamp-2">
+                  <p className="text-white/90 text-sm line-clamp-2 [text-shadow:_0_2px_2px_rgb(0_0_0_/_80%)]">
                     {destination.description}
                   </p>
                 </div>

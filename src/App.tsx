@@ -32,7 +32,7 @@ const App = () => {
         <MobileContainer>
           <div className="relative h-full bg-white">
             <Routes>
-              <Route path="/" element={<LandingPage />} />
+              <Route path="/" element={<LandingPage />} replace />
               <Route path="/auth" element={<AuthPage />} />
               <Route path="/home" element={<Home />} />
               <Route path="/destinations" element={<Destinations />} />

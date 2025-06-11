@@ -60,7 +60,7 @@ export default function Destinations() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             className="text-slate-600"
           >
             <ArrowLeft size={20} />
@@ -134,11 +134,11 @@ export default function Destinations() {
                   </Badge>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4 p-2 bg-white/10 backdrop-blur-sm rounded-md">
-                  <h3 className="text-white text-xl font-bold mb-2">
+                <div className="absolute bottom-4 left-4 right-4 p-2">
+                  <h3 className="text-white text-xl font-bold mb-2 [text-shadow:_0_2px_2px_rgb(0_0_0_/_80%)]">
                     {destination.name}
                   </h3>
-                  <p className="text-white/90 text-sm line-clamp-2">
+                  <p className="text-white/90 text-sm line-clamp-2 [text-shadow:_0_2px_2px_rgb(0_0_0_/_80%)]">
                     {destination.description}
                   </p>
                 </div>
@@ -190,7 +190,7 @@ function DestinationDetail({ destination }: DestinationDetailProps) {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => navigate("/destinations")}
+            onClick={() => navigate("/home")}
             className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30"
           >
             <ArrowLeft size={20} />

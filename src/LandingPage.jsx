@@ -6,7 +6,7 @@ function LandingPage() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/auth");
+      navigate("/auth", { replace: true });
     }, 3000); // Navigate to /auth after 3 seconds
     return () => clearTimeout(timer);
   }, [navigate]);
