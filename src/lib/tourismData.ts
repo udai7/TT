@@ -40,7 +40,7 @@ export const destinations: Destination[] = [
     description:
       "Ancient rock-cut sculptures and carvings dating back to 7th-9th centuries, featuring Hindu deities.",
     image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop",
+      "/unakoti.jpg",
     rating: 4.6,
     category: "historical",
     highlights: [
@@ -57,7 +57,7 @@ export const destinations: Destination[] = [
     description:
       "Former royal palace and current state museum showcasing Tripura's rich cultural heritage.",
     image:
-      "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=600&fit=crop",
+      "ujjayanta-palace.png",
     rating: 4.4,
     category: "historical",
     highlights: [
@@ -74,7 +74,7 @@ export const destinations: Destination[] = [
     description:
       "Beautiful water palace built in the middle of Rudrasagar Lake, blending Hindu and Islamic architecture.",
     image:
-      "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=800&h=600&fit=crop",
+      "neermahal.jpg",
     rating: 4.7,
     category: "historical",
     highlights: [
@@ -91,7 +91,7 @@ export const destinations: Destination[] = [
     description:
       "Home to diverse flora and fauna including spectacled monkeys, birds, and botanical gardens.",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop",
+      "sepahijala.jpeg",
     rating: 4.3,
     category: "nature",
     highlights: [
@@ -108,7 +108,7 @@ export const destinations: Destination[] = [
     description:
       "Scenic hill station known for orange cultivation, tribal culture, and breathtaking sunrise views.",
     image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+      "jampui-hills.webp",
     rating: 4.5,
     category: "nature",
     highlights: [
@@ -125,7 +125,7 @@ export const destinations: Destination[] = [
     description:
       "One of the 51 Shakti Peethas, this ancient temple is dedicated to Goddess Tripura Sundari.",
     image:
-      "https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=800&h=600&fit=crop",
+      "tripura-sundari.jpeg",
     rating: 4.8,
     category: "cultural",
     highlights: [
@@ -275,7 +275,7 @@ export const events = [
     date: "2024-07-25",
     description: "Major festival celebrating the 14 deities of Tripura",
     image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      "spiritual.jpg",
     location: "Chaturdasha Temple",
   },
   {
@@ -284,7 +284,7 @@ export const events = [
     date: "2024-04-15",
     description: "Harvest festival celebrating prosperity and abundance",
     image:
-      "https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?w=400&h=300&fit=crop",
+      "garia-festival.jpg",
     location: "Various Temples",
   },
   {
@@ -293,7 +293,7 @@ export const events = [
     date: "2024-12-10",
     description: "Celebration of orange harvest in Jampui Hills",
     image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      "orange-festival.jpg",
     location: "Jampui Hills",
   },
 ];

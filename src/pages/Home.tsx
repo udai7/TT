@@ -68,11 +68,7 @@ export default function Home() {
             <Menu size={24} />
           </Button>
           <div className="flex items-center">
-            <img
-              src="/lg.png"
-              alt="Tourism Icon"
-              className="h-10"
-            />
+            <img src="/lg.png" alt="Tourism Icon" className="h-10" />
           </div>
           <Button variant="ghost" size="icon" className="text-slate-700">
             <User size={24} />
@@ -175,7 +171,7 @@ export default function Home() {
                     {destination.rating}
                   </Badge>
                 </div>
-                <div className="absolute bottom-3 left-3 right-3">
+                <div className="absolute bottom-3 left-3 right-3 p-2 bg-white/10 backdrop-blur-sm rounded-md">
                   <h3 className="text-white text-xl font-bold mb-1">
                     {destination.name}
                   </h3>
