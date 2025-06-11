@@ -20,60 +20,81 @@ function AuthPage() {
         alignItems: "center",
         fontFamily: "Arial, sans-serif",
         overflow: "hidden",
+        margin: 0,
+        padding: 0,
       }}
     >
+      <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        `}
+      </style>
       {/* Top green wavy section */}
       <div
         style={{
-          backgroundColor: "#16a34a", // Changed to nature-600
+          backgroundColor: "#16a34a",
           width: "100%",
-          height: "25%", // Adjust height as needed
-          borderBottomLeftRadius: "50% 20%", // Wavy effect
+          height: "20%",
+          borderBottomLeftRadius: "50% 20%",
           borderBottomRightRadius: "50% 20%",
           position: "relative",
           display: "flex",
-          justifyContent: "flex-end",
-          alignItems: "flex-start",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
           padding: "20px",
           boxSizing: "border-box",
         }}
       >
-        {/* Removed: <p style={{ color: 'white', fontSize: '1.1em' }}>I don't have an account? <span style={{ fontWeight: 'bold' }}>Signup</span></p> */}
+        <p style={{ color: "white", fontSize: "1em" }}>
+          Don't have an account?{" "}
+          <span style={{ fontWeight: "bold" }}>SignUp now</span>
+        </p>
       </div>
 
       {/* Content below the wavy section */}
       <div
         style={{
           position: "relative",
-          top: "-80px", // Adjust to overlap with the wavy section
+          top: "-40px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           width: "90%",
-          maxWidth: "400px",
+          maxWidth: "360px",
           padding: "20px",
+          transform: "scale(0.9)",
+          transformOrigin: "top center",
         }}
       >
-        {/* Kerala Logo and text */}
         <img
-          src="lg.png" // Placeholder for Kerala logo
+          src="lg.png"
           alt="Kerala Tourism Logo"
-          style={{ width: "150px", marginBottom: "10px" }}
+          style={{ width: "135px", marginBottom: "30px", marginTop: "40px" }}
         />
-        <p
-          style={{ fontSize: "0.9em", color: "#666", marginBottom: "30px" }}
-        ></p>
-
         <h1
           style={{
             fontSize: "1.8em",
-            fontWeight: "bold",
-            marginBottom: "30px",
+            fontWeight: "700",
+            marginBottom: "10px",
             textAlign: "center",
+            color: "#333",
+            fontFamily: "'Poppins', sans-serif",
           }}
         >
           Welcome to Tripura Tourism
         </h1>
+        <p
+          style={{
+            fontSize: "1.1em",
+            color: "#666",
+            textAlign: "center",
+            fontStyle: "italic",
+            marginBottom: "30px",
+          }}
+        >
+          Explore the secrets of Tripura
+        </p>
 
         <div style={{ width: "100%", marginBottom: "20px" }}>
           <input
@@ -121,24 +142,12 @@ function AuthPage() {
             👁️
           </span>
         </div>
-        <p style={{ textAlign: "right", width: "100%", marginBottom: "30px" }}>
-          <a
-            href="#"
-            style={{
-              color: "#DC3545",
-              textDecoration: "none",
-              fontSize: "0.9em",
-            }}
-          >
-            Forgot password ?
-          </a>
-        </p>
         <button
           onClick={handleSignIn}
           style={{
             width: "100%",
             padding: "15px",
-            backgroundColor: "#16a34a", // Changed to nature-600
+            backgroundColor: "#16a34a",
             color: "white",
             border: "none",
             borderRadius: "8px",
@@ -146,6 +155,7 @@ function AuthPage() {
             fontWeight: "bold",
             cursor: "pointer",
             transition: "background-color 0.3s ease",
+            marginTop: "20px",
           }}
           onMouseOver={(e) =>
             (e.currentTarget.style.backgroundColor = "#15803d")

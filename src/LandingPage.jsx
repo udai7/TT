@@ -20,15 +20,16 @@ function LandingPage() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        margin: 0,
+        padding: 0,
       }}
     >
-      {/* Placeholder for Tripura Tourism Logo */}
       <img
         src="/lg.png"
         alt="Tripura Tourism Logo"
-        style={{ maxWidth: "80%", maxHeight: "80%" }}
+        style={{ maxWidth: "80%", maxHeight: "60%", marginBottom: "20px" }}
       />
-      <div style={{ display: "flex", marginTop: "50px" }}>
+      <div style={{ display: "flex", marginTop: "20px" }}>
         <div
           style={{
             width: "10px",
