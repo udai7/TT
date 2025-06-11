@@ -69,9 +69,9 @@ export default function Home() {
           </Button>
           <div className="flex items-center">
             <img
-              src="/path/to/tourism-icon.png"
+              src="/lg.png"
               alt="Tourism Icon"
-              className="h-8"
+              className="h-10"
             />
           </div>
           <Button variant="ghost" size="icon" className="text-slate-700">

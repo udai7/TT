@@ -56,7 +56,7 @@ function AuthPage() {
       >
         {/* Kerala Logo and text */}
         <img
-          src="/path/to/your/kerala_tourism_logo.png" // Placeholder for Kerala logo
+          src="lg.png" // Placeholder for Kerala logo
           alt="Kerala Tourism Logo"
           style={{ width: "150px", marginBottom: "10px" }}
         />

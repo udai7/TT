@@ -24,7 +24,7 @@ function LandingPage() {
     >
       {/* Placeholder for Tripura Tourism Logo */}
       <img
-        src="/path/to/your/tripura_tourism_logo.png"
+        src="/lg.png"
         alt="Tripura Tourism Logo"
         style={{ maxWidth: "80%", maxHeight: "80%" }}
       />
