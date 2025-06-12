@@ -170,11 +170,11 @@ export default function Home() {
                       {destination.rating}
                     </Badge>
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-2 bg-white/10 backdrop-blur-sm">
-                    <h3 className="text-white text-lg font-bold mb-1">
+                  <div className="absolute bottom-0 left-0 right-0 p-2 bg-black/40">
+                    <h3 className="text-white text-lg font-bold mb-1 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
                       {destination.name}
                     </h3>
-                    <p className="text-white/90 text-xs line-clamp-2">
+                    <p className="text-white text-xs line-clamp-2 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
                       {destination.description}
                     </p>
                   </div>
@@ -202,24 +202,40 @@ export default function Home() {
           </div>
 
           <div className="flex overflow-x-auto hide-scrollbar pb-4">
-            {[1, 2, 3].map((item) => (
+            {[
+              {
+                name: "Mui Borok",
+                description: "Traditional fermented fish curry with vegetables",
+                image: "/tripura-cuisine.webp",
+              },
+              {
+                name: "Chakhwi",
+                description: "Bamboo shoot curry with dried fish",
+                image: "/chakwi.webp",
+              },
+              {
+                name: "Wahan Mosdeng",
+                description: "Pork curry with black sesame seeds",
+                image: "/wahan.jpg",
+              },
+            ].map((item, index) => (
               <Card
-                key={item}
+                key={index}
                 className="flex-shrink-0 w-64 mr-4 overflow-hidden shadow-md border-0 cursor-pointer hover:shadow-lg transition-shadow"
                 onClick={() => navigate("/culture-food/local-cuisine")}
               >
                 <div className="relative h-40">
                   <img
-                    src={`/tripura-cuisine.webp`}
-                    alt={`Food ${item}`}
+                    src={item.image}
+                    alt={item.name}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 p-2 bg-white/10 backdrop-blur-sm">
-                    <h3 className="text-white text-lg font-bold mb-1">
-                      Dish {item}
+                  <div className="absolute bottom-0 left-0 right-0 p-2 bg-black/40">
+                    <h3 className="text-white text-lg font-bold mb-1 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+                      {item.name}
                     </h3>
-                    <p className="text-white/90 text-xs line-clamp-2">
-                      A brief description of this amazing Tripura dish.
+                    <p className="text-white text-xs line-clamp-2 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+                      {item.description}
                     </p>
                   </div>
                 </div>
@@ -246,25 +262,43 @@ export default function Home() {
           </div>
 
           <div className="flex overflow-x-auto hide-scrollbar pb-4">
-            {[1, 2, 3].map((item) => (
+            {[
+              {
+                name: "Garia Puja",
+                description:
+                  "A major festival celebrating the deity Garia, marked by traditional dances and rituals",
+                image: "/garia-festival.jpg",
+              },
+              {
+                name: "Kharchi Puja",
+                description:
+                  "Seven-day festival honoring the fourteen deities, featuring grand celebrations",
+                image: "/tribal-festival.jpg",
+              },
+              {
+                name: "Ker Puja",
+                description:
+                  "Traditional festival for community welfare, celebrated with great enthusiasm",
+                image: "/ker.jpg",
+              },
+            ].map((item, index) => (
               <Card
-                key={item}
+                key={index}
                 className="flex-shrink-0 w-64 mr-4 overflow-hidden shadow-md border-0 cursor-pointer hover:shadow-lg transition-shadow"
                 onClick={() => navigate("/culture-food/cultural-heritage")}
               >
                 <div className="relative h-40">
                   <img
-                    src={`garia-festival.jpg`}
-                    alt={`Culture ${item}`}
+                    src={item.image}
+                    alt={item.name}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 p-2 bg-white/10 backdrop-blur-sm">
-                    <h3 className="text-white text-lg font-bold mb-1">
-                      Festival {item}
+                  <div className="absolute bottom-0 left-0 right-0 p-2 bg-black/40">
+                    <h3 className="text-white text-lg font-bold mb-1 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+                      {item.name}
                     </h3>
-                    <p className="text-white/90 text-xs line-clamp-2">
-                      Experience the vibrant culture of Tripura with this
-                      festival.
+                    <p className="text-white text-xs line-clamp-2 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+                      {item.description}
                     </p>
                   </div>
                 </div>

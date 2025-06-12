@@ -9,7 +9,7 @@ export default function CultureDetail() {
     title: "Cultural Heritage",
     description:
       "Tripura's cultural heritage is a vibrant tapestry of tribal traditions, festivals, and artistic expressions. The state's rich cultural diversity is reflected in its numerous festivals, traditional dances, music, and handicrafts, making it a fascinating destination for cultural exploration.",
-    image: "/culture1.jpg",
+    image: "/durga.webp",
     highlights: [
       "Traditional festivals",
       "Tribal dance forms",
