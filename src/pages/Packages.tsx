@@ -30,14 +30,14 @@ export default function Packages() {
         {tourPackages.map((pkg) => (
           <Card key={pkg.id} className="shadow-md border-0">
             <CardContent className="p-0">
-              <div className="relative h-48">
+              <div className="relative h-40">
                 <img
                   src={pkg.image}
                   alt={pkg.name}
                   className="w-full h-full object-cover rounded-t-lg"
                 />
                 <div className="absolute top-3 right-3">
-                  <Badge className="bg-white/90 text-slate-700">
+                  <Badge className="bg-white/90 text-slate-700 hover:bg-white">
                     <Star
                       size={12}
                       className="mr-1 fill-yellow-400 text-yellow-400"
@@ -45,19 +45,17 @@ export default function Packages() {
                     {pkg.rating}
                   </Badge>
                 </div>
-                <div className="absolute bottom-3 left-3">
-                  <div className="text-white text-2xl font-bold">
-                    ₹{pkg.price.toLocaleString()}
-                  </div>
-                  <div className="text-white/90 text-sm">{pkg.duration}</div>
+                <div className="absolute bottom-0 left-0 right-0 p-2 bg-white/10 backdrop-blur-sm rounded-b-lg">
+                  <h3 className="text-white text-lg font-bold mb-1">
+                    {pkg.name}
+                  </h3>
+                  <p className="text-white/90 text-xs line-clamp-2">
+                    {pkg.description}
+                  </p>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-t-lg"></div>
               </div>
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                  {pkg.name}
-                </h3>
-                <div className="flex items-center gap-4 text-sm text-slate-600 mb-3">
+              <CardContent className="p-4">
+                <div className="flex items-center text-slate-600 text-sm mb-2">
                   <div className="flex items-center gap-1">
                     <Clock size={14} />
                     {pkg.duration}
@@ -82,7 +80,7 @@ export default function Packages() {
                   <Calendar size={16} className="mr-2" />
                   Book Now
                 </Button>
-              </div>
+              </CardContent>
             </CardContent>
           </Card>
         ))}

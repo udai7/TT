@@ -16,6 +16,10 @@ import Culture from "./pages/Culture";
 import NotFound from "./pages/NotFound";
 import LandingPage from "./LandingPage.jsx";
 import AuthPage from "./pages/AuthPage.jsx";
+import CultureFood from "./pages/CultureFood";
+import CuisineDetail from "./pages/CuisineDetail";
+import CultureDetail from "./pages/CultureDetail";
+import MapPage from "./pages/MapPage";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +48,24 @@ const App = () => {
               <Route path="/events" element={<Events />} />
               <Route path="/chat" element={<Chat />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/culture-food" element={<CultureFood />} />
+              <Route
+                path="/culture-food/local-cuisine"
+                element={<CultureFood />}
+              />
+              <Route
+                path="/culture-food/cultural-heritage"
+                element={<CultureFood />}
+              />
+              <Route
+                path="/culture-food/local-cuisine/:id"
+                element={<CuisineDetail />}
+              />
+              <Route
+                path="/culture-food/cultural-heritage/:id"
+                element={<CultureDetail />}
+              />
+              <Route path="/map" element={<MapPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

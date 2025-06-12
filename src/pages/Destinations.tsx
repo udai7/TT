@@ -134,7 +134,7 @@ export default function Destinations() {
                   </Badge>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4 p-2">
+                <div className="absolute bottom-0 left-0 right-0 p-2 bg-white/10 backdrop-blur-sm">
                   <h3 className="text-white text-xl font-bold mb-2 [text-shadow:_0_2px_2px_rgb(0_0_0_/_80%)]">
                     {destination.name}
                   </h3>
